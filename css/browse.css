@@ -1,0 +1,100 @@
+@import url("./common.css");
+
+.nav {
+	background-color: rgba(0,0,0,0.5);
+	justify-content: space-around;
+	padding: 5px;
+}
+
+#bottomnav a {
+	font-size: 0.8em;
+}
+
+#bottomnav a:hover i {
+	color: var(--link-icon-color-visited);
+}
+
+#nav-icon {
+	max-height: 30px;
+}
+
+#comingsoon i {
+	position: relative;
+}
+
+.badge {
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	top: -5px;
+	right: -15px;
+	text-align: center;
+	vertical-align: middle;
+	background-color: red;
+}
+
+#main-movie-banner {
+	height: 70vh;
+	background-image: url("../img/browse/mainposter.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+#main-movie-options {
+	padding-top: 0.5rem;
+	justify-content: space-around;
+}
+
+#main-movie-options a {
+	flex: 1 0 80px;
+}
+
+/* Play button */
+#main-movie-options:nth-child(2) {
+	flex-grow: 2;
+}
+
+#main-movie-options:nth-child(2) i {
+	color: black;
+}
+
+.scroller {
+	overflow-x: scroll;
+}
+
+.scroller::-webkit-scrollbar {
+	display: none;
+}
+
+.preview {
+	position: relative;
+}
+
+.preview .poster {
+	height: 120px;
+	background-image: url("../img/browse/filmposter.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+.preview .title {
+	position: absolute;
+	bottom: 0px;
+}
+
+.entry {
+	margin-left: 5px;
+	margin-right: 5px;
+	min-height: 150px;
+	flex: 0 0 120px;
+}
+
+.entry-options {
+	justify-content: space-between;
+	background-color: #1f1f1f;
+}
+
+.spacer {
+	height: 10vh;
+}

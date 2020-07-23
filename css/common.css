@@ -1,0 +1,95 @@
+@import url("https://assets.ubuntu.com/v1/vanilla-framework-version-2.14.1.min.css");
+@import url("./all.css");
+
+:root {
+	--bg-color: black;
+	--text-color: #ddd;
+	--icon-color: #777;
+	--link-icon-color-visited: white;
+	--debug-border-color: white;
+}
+
+.fa {
+	color: var(--icon-color);
+}
+
+/* DEBUGGING ONLY */
+/**
+div {
+	border: 1px dotted var(--debug-border-color);
+}
+/**/
+
+.flex {
+	display: flex;
+}
+
+.justify-center {
+	justify-content: center;
+}
+
+.items-center {
+	align-items: center;
+}
+
+.content-center {
+	align-content: center;
+}
+
+.row {
+	flex-flow: row wrap;
+}
+
+.col { 
+	flex-flow: column wrap;
+}
+
+.nowrap {
+	flex-wrap: nowrap;
+}
+
+.fixed {
+	position: fixed;
+}
+
+.fixed.top {
+	top: 0;
+}
+
+.fixed.bottom {
+	bottom: 0;
+}
+
+.fixed.left {
+	left: 0;
+}
+
+.fixed.right {
+	right: 0;
+}
+
+.fullwidth {
+	width: 100%;
+}
+
+.circle {
+	border-radius: 50%;
+}
+
+.underlined {
+	text-decoration: underline;
+}
+
+body {
+	margin: 0;
+	background-color: var(--bg-color);
+	min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6, p, div, a, a:visited {
+	color: var(--text-color);
+}
+
+a:focus {
+	outline: none;
+}
