@@ -1,5 +1,5 @@
 <template>
-  <q-btn color="black" class="q-ma-sm">
+  <q-btn to="/home" color="black" class="q-ma-sm">
     <div class="column items-center">
       <q-avatar rounded size="100px">
         <img src="~assets/user.jpg">

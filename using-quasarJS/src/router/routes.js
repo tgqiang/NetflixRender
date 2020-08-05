@@ -1,17 +1,24 @@
 /*
  TODOS:
  1. users:
- - Define UsersLayout.vue (done)
- - Define Users.vue (done)
- - Define User.vue (done)
+ - Define UsersLayout.vue       (done)
+ - Define Users.vue             (done)
+ - Define User.vue              (done)
 
  2. home:
- - Define HomeLayout.vue (WIP)
+ - Define HomeLayout.vue        (done)
+ - Define MainMovie.vue         (done)
+ - Define PreviewMovieList.vue  (done)
+ - Define PreviewMovieItem.vue  (done)
+ - Define GenericMovieList.vue  (done)
+ - Define GenericMovieItem.vue  (done)
 
  3. Styling
- - Define stylings for 'users'
- - Define stylings for 'home'
+ - Define stylings for 'users'  (done)
+ - Define stylings for 'home'   (done)
  */
+
+import MainMovie from 'pages/MainMovie'
 
 const routes = [
   /*
@@ -22,10 +29,7 @@ const routes = [
    */
   {
     path: '/',
-    component: () => import('layouts/MainLayout.vue'),
-    children: [
-      { path: '', component: () => import('pages/Index.vue') }
-    ]
+    redirect: '/users'
   },
 
   {
@@ -35,15 +39,20 @@ const routes = [
       { path: '', component: () => import('pages/Users.vue') }
     ]
   },
-  /*
+
   {
     path: '/home',
     component: () => import('layouts/HomeLayout.vue'),
     children: [
-      { path: '', component: () => import('pages/Users.vue') }
+      {
+        path: '',
+        components: {
+          mainMovie: MainMovie
+        }
+      }
     ]
   },
-  */
+
   // Always leave this as last one,
   // but you can also remove it
   {

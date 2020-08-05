@@ -1,3 +1,41 @@
 // app global css in Sass form
+// variables
+$overlay-menu-color   : rgba(0,0,0,0.6)
+$spacer-height        : 10vh
+$list-item-width      : 110px
+$preview-list-height  : 140px
+
+// stylings
 body
   background-color: black;
+
+.my-overlay
+  background-color: $overlay-menu-color;
+
+/*
+ * Provides spacing at the end of the page-view, so that the bottom
+ * navbar will not overlap any elements at the end of the page-view.
+ */
+.spacer
+  height: $spacer-height;
+
+// horizontal list-scrollers
+.list-display
+  display: flex;
+  overflow-x: scroll;
+
+.list-display::-webkit-scrollbar
+  display: none;
+
+.list-item
+  min-width: $list-item-width;
+
+// preview list
+.preview-item
+  height: $preview-list-height;
+
+.preview-item .poster
+  border-radius: 50%;
+  border: 1px solid white;
+  width: $list-item-width;
+  height: $list-item-width;
